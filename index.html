@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div>
+        <div class="main-container miDiv row-lines">
+
+        </div>
+
+        <div class="button-container">
+
+            <div class="add-remove-items">
+                <div class="axis-lines">
+                    <div class="graph-axis row-lines"></div>
+                    <h2><span class="mainaxis">---</span> Main Axis</h2>
+                    <h2><span class="crossaxis">---</span> Cross Axis</h2>
+                </div>
+
+                <h2>Add / Remove</h2>
+                <div>
+                    <button id="inline" class="btn AR_btn">
+                        +
+                    </button>
+                    <button id="none" class="btn AR_btn">
+                        -
+                    </button>
+                </div>
+                <div class="width-height-modifier">
+                    <h2>Width 100-200px</h2>
+                    <input id="range-width" min="100" max="200" step="10" type="range" value="100">
+                    <h2>Height 100-200px</h2>
+                    <input id="range-height" min="100" max="200" step="10" type="range" value="100">
+                </div>
+
+
+            </div>
+            <div class="flex-container-props">
+
+                <div>
+                    <h2>display: flex;</h2>
+                </div>
+
+                <div class="flex-buttons">
+                    <h2>flex-direction:</h2>
+                    <button style="background: green;color: white;" id="row" class="btn">row</button>
+                    <button id="column" class="btn">column</button>
+                    <button id="row-reverse" class="btn">row-reverse</button>
+                    <button id="column-reverse" class="btn">column-reverse</button>
+                </div>
+
+                <div class="flex-buttons">
+                    <h2>justify-content:</h2>
+                    <button style="background: green; color: white; " id="flex-start" class="btn">flex-start</button>
+                    <button id="flex-end" class="btn">flex-end</button>
+                    <button id="center" class="btn">center</button>
+                    <button id="space-around" class="btn">space-around</button>
+                    <button id="space-between" class="btn">space-between</button>
+                    <button id="space-evenly" class="btn">space-evenly</button>
+                </div>
+
+                <div class="flex-buttons">
+                    <h2>align-items:</h2>
+                    <button style="background: green; color: white; " id="stretch" class="btn">stretch</button>
+                    <button id="flexStartAI" class="btn">flex-start</button>
+                    <button id="flexEndAI" class="btn">flex-end</button>
+                    <button id="centerAI" class="btn">center</button>
+                    <button id="baseline" class="btn">baseline</button>
+                </div>
+
+
+                <div class="flex-buttons">
+                    <h2>flex-wrap:</h2>
+                    <button style="background: green; color: white; " id="nowrap" class="btn">nowrap</button>
+                    <button id="wrap" class="btn">wrap</button>
+                </div>
+
+                <div class="flex-buttons">
+                    <h2>align-content:</h2>
+                    <button id="flex-startAC" class="btn">flex-start</button>
+                    <button id="flex-endAC" class="btn">flex-end</button>
+                    <button id="centerAC" class="btn">center</button>
+                    <button id="space-aroundAC" class="btn">space-around</button>
+                    <button id="space-betweenAC" class="btn">space-between</button>
+                    <button id="space-evenlyAC" class="btn">space-evenly</button>
+                </div>
+
+
+                <div class="flex-buttons">
+                    <h2>flex-basis:</h2>
+                    <button style="background: green; color: white; " id="auto" class="btn">flex-basis:
+                        auto</button>
+                    <button id="150px" class="btn">flex-basis: 150px</button>
+                    <button id="200px" class="btn">flex-basis: 200px</button>
+                    <button id="300px" class="btn">flex-basis: 300px</button>
+                </div>
+
+
+            </div>
+            <div class="flex-items-props">
+                <h2>Apply to all Flex Items</h2>
+                <div>
+                    <h2>flex-grow:</h2>
+                    <button id="flex-grow-0" class="btn">0</button>
+                    <button id="flex-grow-1" class="btn">1</button>
+                </div>
+
+                <h2>Apply to last Flex Item</h2>
+                <div>
+                    <h2>flex-shrink:</h2>
+                    <button id="flex-shrink-0" class="btn">0</button>
+                    <button id="flex-shrink-1" class="btn">10</button>
+                </div>
+                <div class="flex-buttons">
+                    <h2>align-self:</h2>
+                    <button style="background: green; color: white;" id="autoAS" class="btn">auto</button>
+                    <button id="stretchAS" class="btn">stretch</button>
+                    <button id="flex-startAS" class="btn">flex-start</button>
+                    <button id="flex-endAS" class="btn">flex-end</button>
+                    <button id="centerAS" class="btn">center</button>
+                    <!-- <button id="baselineAS" class="btn">baseline</button>-->
+                </div>
+
+                <div>
+                    <h2>flex-order:</h2>
+                    <button id="order" class="btn">-1</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="firma">
+            <a href="https://instagram.com/robertsmith_v91?igshid=OGY3MTU3OGY1Mw==">Created by Robert_Smith</a>
+        </div>
+    </div>
+
+
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
